@@ -1,0 +1,50 @@
+<!--
+ * @Date: 2023-10-09 21:48:19
+ * @LastEditors: 
+ * @LastEditTime: 2023-10-09 21:49:05
+ * @FilePath: \undefinedd:\boke\index.html
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        
+        #countdown {
+            font-size: 48px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            width: 150px;
+            background-color: #fff;
+        }
+    </style>
+    
+    <script>
+        var countdown = 3;
+        
+        function startCountdown() {
+            var countdownElement = document.getElementById("countdown");
+            
+            countdownElement.innerHTML = countdown;
+            
+            if (countdown === 0) {
+                window.location.href = "https://xiaofeishu-boke.netlify.app/";
+            } else {
+                countdown--;
+                setTimeout(startCountdown, 1000);
+            }
+        }
+        
+        window.onload = startCountdown;
+    </script>
+</head>
+<body>
+    <div id="countdown"></div>
+</body>
+</html>
