@@ -1,12 +1,16 @@
 <!--
  * @Date: 2023-10-09 21:48:19
- * @LastEditors: 
- * @LastEditTime: 2023-10-09 21:49:05
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2023-10-10 20:44:18
  * @FilePath: \undefinedd:\boke\index.html
 -->
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>没用的小废鼠的blog | 跳转中... </title>
+    <link rel="shortcut icon" type="image/ico" href="https://xiaofeishu.weie.eu.org/ico.png">
+    <script src="https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Impact-Good-words-and-sentences/main/script.js"charset="utf-8"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +26,22 @@
             border-radius: 10px;
             width: 150px;
             background-color: #fff;
+        }
+        
+        #footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        #manual-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
     
@@ -41,10 +61,16 @@
             }
         }
         
+        function manualRedirect() {
+            window.location.href = "https://xiaofeishu-boke.netlify.app/";
+        }
+        
         window.onload = startCountdown;
     </script>
 </head>
 <body>
     <div id="countdown"></div>
+    <div id="footer">此博客已经迁移至Netlify，正在为您跳转...</div>
+    <button id="manual-button" onclick="manualRedirect()">手动跳转</button>
 </body>
 </html>
